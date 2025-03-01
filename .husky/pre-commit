@@ -3,4 +3,5 @@
 
 # pnpm lint
 echo "Running pnpm lint..."
-pnpm lint:es
+# pnpm lint && pnpm spellcheck
+pnpm spellcheck && npx lint-staged
