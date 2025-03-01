@@ -4,7 +4,35 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "lint:es": "eslint \"{packages,apps}/**/*.{js,jsx,ts,tsx}\""
+        "lint:es": "eslint \"{packages,apps}/**/*.{js,jsx,ts,tsx}\"",
+        "lint:style": "stylelint \"{packages,apps}/**/*.{css,ts}\"",
+        "lint": "npm run lint:es && npm run lint:style",
+        "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
+        "typecheck": "tsc --noEmit",
+        "commit": "git-cz",
+        "prepare": "husky"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-git"
+        }
+    },
+    "lint-staged": {
+        "*.{md,json}": [
+            "prettier --cache --write --no-error-on-unmatched-pattern"
+        ],
+        "*.{css,less}": [
+            "stylelint --fix",
+            "prettier --cache --write"
+        ],
+        "*.{js,jsx}": [
+            "eslint --fix",
+            "prettier --cache --write"
+        ],
+        "*.{ts,tsx}": [
+            "eslint --fix",
+            "prettier --cache --parser=typescript --write"
+        ]
     },
     "devDependencies": {
         "typescript": "5.4.5",
