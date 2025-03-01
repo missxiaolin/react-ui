@@ -1,0 +1,25 @@
+{
+    "name": "@l/ui",
+    "version": "0.0.1",
+    "description": "xiaolin React UI 库",
+    "type": "module",
+    "main": "es/index.js",
+    "module": "es/index.js",
+    "types": "es/index.d.ts",
+    "files": [
+        "es"
+    ],
+    "scripts": {
+        "dev": "tsup --watch",
+        "build": "tsup",
+        "release": "pnpm build && npm publish"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "tsup": "8.1.0"
+    },
+    "peerDependencies": {
+        "react": "18.2.0",
+        "styled-components": "6.1.11"
+    }
+}

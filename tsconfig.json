@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "lib": ["DOM", "ESNext"],
+        "allowJs": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "jsx": "react-jsx",
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "paths": {
+            "@l/*": ["./packages/@l/*/src"]
+        }
+    },
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Base",
+    "include": ["packages/**/*"]
+}
+// https://www.typescriptlang.org/tsconfig
