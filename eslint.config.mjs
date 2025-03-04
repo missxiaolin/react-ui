@@ -12,21 +12,7 @@ export default tseslint.config({
         '@typescript-eslint/no-for-in-array': 'error',
         'no-unused-vars': 'error',
         'no-undef': 'warn',
-        'no-console': 'error',
-        'simple-import-sort/imports': [
-            'error',
-            {
-                groups: [
-                    ['^\\w'],
-                    ['^@\\w'],
-                    ['^@/'],
-                    ['^\\u0000'],
-                    ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
-                    ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$']
-                ]
-            }
-        ],
-        'simple-import-sort/exports': 'error'
+        'no-console': 'error'
     },
     languageOptions: {
         parser: tseslint.parser,
