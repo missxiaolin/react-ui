@@ -1,64 +1,68 @@
 {
-  "name": "l-ui",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "lint:es": "eslint \"{packages,apps}/**/*.{js,jsx,ts,tsx}\"",
-    "lint:style": "stylelint \"{packages,apps}/**/*.{css,ts}\"",
-    "lint": "npm run lint:es && npm run lint:style",
-    "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
-    "typecheck": "tsc --noEmit",
-    "commit": "git-cz",
-    "prepare": "husky"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-git"
-    }
-  },
-  "lint-staged": {
-    "*.{md,json}": [
-      "prettier --cache --write --no-error-on-unmatched-pattern"
-    ],
-    "*.{css,less}": [
-      "stylelint --fix",
-      "prettier --cache --write"
-    ],
-    "*.{js,jsx}": [
-      "eslint --fix",
-      "prettier --cache --write"
-    ],
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --cache --parser=typescript --write"
-    ]
-  },
-  "devDependencies": {
-    "typescript": "5.4.5",
-    "@types/node": "20.14.9",
-    "@types/react": "18.2.75",
-    "@types/jest": "29.5.12",
-    "eslint": "9.5.0",
-    "@eslint/js": "9.5.0",
-    "cspell": "8.9.1",
-    "globals": "15.6.0",
-    "typescript-eslint": "7.14.1",
-    "@typescript-eslint/eslint-plugin": "7.14.1",
-    "eslint-plugin-simple-import-sort": "12.1.0",
-    "stylelint": "16.6.1",
-    "stylelint-config-standard": "36.0.1",
-    "postcss-styled-syntax": "0.6.4",
-    "lint-staged": "15.2.7",
-    "prettier": "3.3.2",
-    "@commitlint/cli": "19.3.0",
-    "@commitlint/config-conventional": "19.2.2",
-    "commitizen": "4.3.0",
-    "husky": "9.0.11",
-    "cz-git": "1.9.3",
-    "turbo": "2.0.5"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "l-ui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "packageManager": "pnpm@9.0.4",
+    "scripts": {
+        "dev": "turbo run dev",
+        "build": "turbo run build",
+        "release": "turbo run release",
+        "lint:es": "eslint \"{packages,apps}/**/*.{js,jsx,ts,tsx}\"",
+        "lint:style": "stylelint \"{packages,apps}/**/*.{css,ts}\"",
+        "lint": "npm run lint:es && npm run lint:style",
+        "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
+        "typecheck": "tsc --noEmit",
+        "commit": "git-cz",
+        "prepare": "husky"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-git"
+        }
+    },
+    "lint-staged": {
+        "*.{md,json}": [
+            "prettier --cache --write --no-error-on-unmatched-pattern"
+        ],
+        "*.{css,less}": [
+            "stylelint --fix",
+            "prettier --cache --write"
+        ],
+        "*.{js,jsx}": [
+            "eslint --fix",
+            "prettier --cache --write"
+        ],
+        "*.{ts,tsx}": [
+            "eslint --fix",
+            "prettier --cache --parser=typescript --write"
+        ]
+    },
+    "devDependencies": {
+        "typescript": "5.4.5",
+        "@types/node": "20.14.9",
+        "@types/react": "18.2.75",
+        "@types/jest": "29.5.12",
+        "eslint": "9.5.0",
+        "@eslint/js": "9.5.0",
+        "cspell": "8.9.1",
+        "globals": "15.6.0",
+        "typescript-eslint": "7.14.1",
+        "@typescript-eslint/eslint-plugin": "7.14.1",
+        "eslint-plugin-simple-import-sort": "12.1.0",
+        "stylelint": "16.6.1",
+        "stylelint-config-standard": "36.0.1",
+        "postcss-styled-syntax": "0.6.4",
+        "lint-staged": "15.2.7",
+        "prettier": "3.3.2",
+        "@commitlint/cli": "19.3.0",
+        "@commitlint/config-conventional": "19.2.2",
+        "commitizen": "4.3.0",
+        "husky": "9.0.11",
+        "cz-git": "1.9.3",
+        "turbo": "2.0.5"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }
