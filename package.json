@@ -5,6 +5,7 @@
     "main": "index.js",
     "packageManager": "pnpm@9.0.4",
     "scripts": {
+        "dev:docs": "pnpm --filter website dev",
         "dev": "turbo run dev",
         "build": "turbo run build",
         "release": "turbo run release",
