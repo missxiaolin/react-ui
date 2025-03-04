@@ -1,10 +1,8 @@
 ---
 category: Components
 title: Foo
-demo:
-    cols: 2
 group:
-    title: 功能类
+    title: 组111件
     order: 1
 ---
 

@@ -4,6 +4,6 @@
         "declaration": true,
         "jsx": "react-jsx"
     },
-    "include": ["src", "./tsup.config.ts", "../../@types"]
+    "include": ["src", "./tsup.config.ts", "../../@types", "index.ts"]
     // "exclude": ["./es"]
 }

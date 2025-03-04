@@ -19,5 +19,6 @@
         "**/language.ts",
         "**/package.json",
         "eslint.config.js"
-    ]
+    ],
+    "ignoreWords": ["favicons", "mfsu"]
 }
