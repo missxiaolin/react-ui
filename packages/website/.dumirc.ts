@@ -19,7 +19,7 @@ export default defineConfig({
     locales: [{ id: 'zh-CN', name: '中文' }], // 配置主题
     themeConfig: {
         title: 'L-UI',
-        favicons: ['/logo.png'],
+        favicon: '/l.svg',
         logo: '/logo.png',
         name: 'L-UI',
         footer: false,

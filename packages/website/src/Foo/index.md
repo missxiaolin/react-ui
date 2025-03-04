@@ -2,7 +2,7 @@
 category: Components
 title: Foo
 group:
-    title: 组111件
+    title: Foo
     order: 1
 ---
 
