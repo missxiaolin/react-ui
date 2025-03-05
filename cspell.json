@@ -18,7 +18,8 @@
         "**/language/**",
         "**/language.ts",
         "**/package.json",
+        "**/website/**",
         "eslint.config.js"
     ],
-    "ignoreWords": ["Cascader", "alicdn", "cthb", "favicons", "mfsu", "outter", "suoxiao"]
+    "ignoreWords": ["Cascader", "alicdn", "cssinjs", "cthb", "favicons", "mfsu", "outter", "suoxiao"]
 }
