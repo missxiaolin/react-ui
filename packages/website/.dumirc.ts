@@ -10,7 +10,7 @@ export default defineConfig({
     mfsu: isWin ? undefined : {},
     apiParser: isProduction ? {} : false,
     alias: {
-        '@l/ui': path.join(__dirname, '../ui/src')
+        '@l/ui': path.join(__dirname, '../ui')
     },
     resolve: {
         // 配置入口文件路径，API 解析将从这里开始
@@ -26,7 +26,7 @@ export default defineConfig({
         hideHomeNav: true,
         prefersColor: {
             default: 'dark',
-            switch: false
+            switch: true
         },
         nav: [
             {

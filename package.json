@@ -6,6 +6,8 @@
     "packageManager": "pnpm@9.0.4",
     "scripts": {
         "dev:docs": "pnpm --filter website dev",
+        "build:docs": "pnpm --filter website docs:build",
+        "preview:docs": "pnpm --filter website docs:preview",
         "dev": "turbo run dev",
         "build": "turbo run build",
         "release": "turbo run release",

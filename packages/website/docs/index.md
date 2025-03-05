@@ -4,7 +4,7 @@ hero:
     description:
     actions:
         - text: 快速开始
-          link: /components/button
+          link: /components/icon
 # features:
 #     - title: Hello
 #       emoji: 💎
