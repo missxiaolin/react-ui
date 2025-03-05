@@ -6,7 +6,7 @@ import { updateCSS } from 'rc-util/lib/Dom/dynamicCSS'
 import { iconStyles } from './styleConfig'
 
 export function warning(valid: boolean, message: string) {
-    warn(valid, `[@ant-design/icons] ${message}`)
+    warn(valid, `[@l-icons] ${message}`)
 }
 
 export const svgBaseProps = {
@@ -33,7 +33,7 @@ export const useInsertStyles = (eleRef: React.RefObject<HTMLElement>) => {
         const ele = eleRef.current as HTMLElement
         const shadowRoot = getShadowRoot(ele)
 
-        updateCSS(mergedStyleStr, '@ant-design-icons', {
+        updateCSS(mergedStyleStr, '@l-icons', {
             prepend: !layer,
             csp,
             attachTo: shadowRoot

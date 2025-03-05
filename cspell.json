@@ -20,5 +20,5 @@
         "**/package.json",
         "eslint.config.js"
     ],
-    "ignoreWords": ["alicdn", "cthb", "favicons", "mfsu", "outter", "suoxiao"]
+    "ignoreWords": ["Cascader", "alicdn", "cthb", "favicons", "mfsu", "outter", "suoxiao"]
 }

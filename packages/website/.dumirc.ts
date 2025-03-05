@@ -25,7 +25,7 @@ export default defineConfig({
         footer: false,
         hideHomeNav: true,
         prefersColor: {
-            default: 'dark',
+            default: '',
             switch: true
         },
         nav: [

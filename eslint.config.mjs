@@ -12,7 +12,10 @@ export default tseslint.config({
         '@typescript-eslint/no-for-in-array': 'error',
         'no-unused-vars': 'error',
         'no-undef': 'warn',
-        'no-console': 'error'
+        'no-console': 'error',
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+        'no-unused-vars': 'off'
     },
     languageOptions: {
         parser: tseslint.parser,

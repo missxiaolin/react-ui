@@ -2,7 +2,7 @@ import * as React from 'react'
 import classNames from 'classnames'
 import { useComposeRef } from 'rc-util/lib/ref'
 import Context from './Context'
-import { warning, svgBaseProps, useInsertStyles } from '../utils'
+import { warning, svgBaseProps, useInsertStyles } from '../_utils'
 
 export interface IconBaseProps extends React.HTMLProps<HTMLSpanElement> {
     spin?: boolean

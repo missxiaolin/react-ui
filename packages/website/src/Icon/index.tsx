@@ -9,6 +9,6 @@ const MyIcon = createFromIconFontCN({
 // import ReactDOM from 'react-dom/client';
 // ReactDOM.createRoot(mountNode).render(<MyIcon type="icon-example" />);
 
-const CheckboxApp: React.FC = () => <MyIcon type="l-suoxiao2" />
+const Icon: React.FC = () => <MyIcon type="l-suoxiao2" />
 
-export default CheckboxApp
+export default Icon

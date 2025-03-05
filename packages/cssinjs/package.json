@@ -1,4 +1,5 @@
 {
+    "private": true,
     "name": "@l/cssinjs",
     "version": "0.0.1",
     "description": "xiaolin React UI 库",
