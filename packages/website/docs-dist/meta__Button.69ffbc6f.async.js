@@ -1,0 +1,6 @@
+"use strict";(self.webpackChunk_l_website=self.webpackChunk_l_website||[]).push([[461],{22825:function(p,s,e){e.r(s),e.d(s,{demos:function(){return f}});var i=e(90819),_=e.n(i),c=e(89933),l=e.n(c),m=e(44194),E=e(36637),f={"button-demo-0":{component:m.memo(m.lazy(l()(_()().mark(function u(){var a,o,r;return _()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,Promise.resolve().then(e.t.bind(e,44194,19));case 2:return a=n.sent,o=a.default,r=function(){return \u6682\u672A\u5F00\u53D1},n.abrupt("return",{default:r});case 6:case"end":return n.stop()}},u)})))),asset:{type:"BLOCK",id:"button-demo-0",refAtomIds:["Button"],dependencies:{"index.tsx":{type:"FILE",value:`import { Button, Flex } from 'antd'
+import React from 'react'
+
+const App: React.FC = () => \u6682\u672A\u5F00\u53D1
+
+export default App`}},entry:"index.tsx"},context:{},renderOpts:{compile:function(){var u=l()(_()().mark(function o(){var r,d=arguments;return _()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(954).then(e.bind(e,10954));case 2:return t.abrupt("return",(r=t.sent).default.apply(r,d));case 3:case"end":return t.stop()}},o)}));function a(){return u.apply(this,arguments)}return a}()}}}},50142:function(p,s,e){e.r(s),e.d(s,{texts:function(){return _}});var i=e(36637);const _=[]}}]);

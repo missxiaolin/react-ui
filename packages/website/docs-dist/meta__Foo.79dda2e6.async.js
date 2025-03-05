@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_l_website=self.webpackChunk_l_website||[]).push([[123],{74961:function(e,_,s){s.r(_),s.d(_,{demos:function(){return a}});var t=s(44194),n=s(32895),a={}},57874:function(e,_,s){s.r(_),s.d(_,{texts:function(){return n}});var t=s(32895);const n=[{value:"This is an example component.",paraId:0,tocIndex:0}]}}]);

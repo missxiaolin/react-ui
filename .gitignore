@@ -7,7 +7,6 @@ node_modules
 # dumi
 **/.dumi
 **/tmp
-**/docs-dist
 
 .turbo
 
