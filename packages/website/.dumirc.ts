@@ -16,7 +16,7 @@ export default defineConfig({
         // 配置入口文件路径，API 解析将从这里开始
         entryFile: path.join(__dirname, '../ui/index.ts')
     },
-    locales: [{ id: 'zh-CN', name: '中文' }], // 配置主题
+    // locales: [{ id: 'zh-CN', name: '中文' }], // 配置主题
     themeConfig: {
         title: 'L-UI',
         favicon: '/l.svg',
@@ -25,7 +25,7 @@ export default defineConfig({
         footer: false,
         hideHomeNav: true,
         prefersColor: {
-            default: '',
+            default: 'light',
             switch: true
         },
         nav: [
