@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "name": "@l/cssinjsutils",
+    "version": "0.0.1",
+    "description": "xiaolin React UI 库",
+    "type": "module",
+    "scripts": {},
+    "dependencies": {},
+    "devDependencies": {
+        "rc-util": "^5.35.0",
+        "react": "18.2.0",
+        "@l/cssinjs": "workspace:^"
+    },
+    "peerDependencies": {
+        "react": "18.2.0",
+        "styled-components": "6.1.11",
+        "classnames": "^2.5.1",
+        "rc-util": "^5.44.4"
+    }
+}
