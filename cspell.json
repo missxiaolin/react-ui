@@ -21,5 +21,24 @@
         "**/website/**",
         "eslint.config.js"
     ],
-    "ignoreWords": ["Cascader", "alicdn", "cssinjs", "cthb", "favicons", "maxmin", "mfsu", "outter", "stylis", "suoxiao", "unitless"]
+    "ignoreWords": [
+        "Cascader",
+        "Consolas",
+        "Menlo",
+        "Neue",
+        "Noto",
+        "Segoe",
+        "alicdn",
+        "cssinjs",
+        "cssinjsutils",
+        "cthb",
+        "favicons",
+        "geekblue",
+        "maxmin",
+        "mfsu",
+        "outter",
+        "stylis",
+        "suoxiao",
+        "unitless"
+    ]
 }

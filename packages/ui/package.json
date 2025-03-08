@@ -16,8 +16,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "tsup": "8.1.0",
-        "@l/cssinjs": "workspace:^"
+        "tsup": "8.1.0"
     },
     "peerDependencies": {
         "react": "18.2.0",

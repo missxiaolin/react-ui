@@ -3,15 +3,12 @@ import { Divider } from '@l/ui'
 
 const AppDivider: React.FC = () => (
     <div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?
-            Refert tamen, quo modo.
-        </p>
+        <p>Lorem</p>
         <Divider />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta?
-            Refert tamen, quo modo.
-        </p>
+        <p>Lorem</p>
+        <Divider dashed />
+        <p>Lorem</p>
+        <Divider dashed>sss</Divider>
     </div>
 )
 

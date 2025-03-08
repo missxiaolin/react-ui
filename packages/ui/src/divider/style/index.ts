@@ -1,5 +1,48 @@
-// import type { CSSProperties } from 'react'
-// import type { CSSObject } from '@l/cssinjs'
-// import { unit } from '@l/cssinjs'
+import styled from 'styled-components'
+import { resetComponent } from '../../_style'
+import { getPrefix } from '../../_utils/index'
 
-// export default genStyleHooks()
+export const DividerStyle = styled.div`
+    ${resetComponent()};
+    position: relative;
+    &.${props => `${getPrefix('divider', props)}-horizontal`} {
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 24px 0;
+        border-top: 1px #ccc solid;
+    }
+    &.${props => `${getPrefix('divider', props)}-vertical`} {
+        display: inline-block;
+        width: 1px;
+        height: 1em;
+        margin: 0 8px;
+        vertical-align: middle;
+        position: relative;
+        border-left: 1px #ccc solid;
+    }
+
+    &.${props => `${getPrefix('divider', props)}-dashed`} {
+        border-style: dashed;
+    }
+    & .${props => `${getPrefix('divider', props)}-inner-text`} {
+        position: absolute;
+        background-color: #fff;
+        padding: 0 20px;
+        font-weight: 500;
+        color: red;
+        font-size: 14px;
+    }
+    & .${props => `${getPrefix('divider', props)}-inner-text-center`} {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .${props => `${getPrefix('divider', props)}-inner-text-left`} {
+        left: 20px;
+        transform: translateY(-50%);
+    }
+    .${props => `${getPrefix('divider', props)}-inner-text-right`} {
+        right: 20px;
+        transform: translateY(-50%);
+    }
+`

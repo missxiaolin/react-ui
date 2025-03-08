@@ -4,6 +4,7 @@ import IconContext from '../icon/Context'
 import { getShadowRoot } from 'rc-util/lib/Dom/shadow'
 import { updateCSS } from 'rc-util/lib/Dom/dynamicCSS'
 import { iconStyles } from './styleConfig'
+import { useComponentConfig } from '../config-provider/context'
 
 export function warning(valid: boolean, message: string) {
     warn(valid, `[@l-icons] ${message}`)
@@ -39,4 +40,19 @@ export const useInsertStyles = (eleRef: React.RefObject<HTMLElement>) => {
             attachTo: shadowRoot
         })
     }, [])
+}
+
+export function unit(num: string | number) {
+    if (typeof num === 'number') {
+        return `${num}px`
+    }
+    return num
+}
+
+export const getPrefix = (name: string, props: any) => {
+    const { prefixCls: customizePrefixCls } = props
+    const { getPrefixCls } = useComponentConfig('divider')
+    const prefixCls = getPrefixCls(name, customizePrefixCls)
+
+    return prefixCls
 }
