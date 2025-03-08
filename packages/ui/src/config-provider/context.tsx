@@ -2,6 +2,7 @@ import React, { createContext } from 'react'
 
 export const defaultPrefixCls = 'l'
 export const defaultIconPrefixCls = 'l-icon'
+const EMPTY_OBJECT = {}
 
 export interface ComponentStyleConfig {
     className?: string
@@ -52,6 +53,8 @@ export function useComponentConfig<T extends keyof ConfigComponentProps>(propNam
 
     return {
         ...propValue,
+        classNames: EMPTY_OBJECT,
+        styles: EMPTY_OBJECT,
         getPrefixCls,
         direction,
         getPopupContainer

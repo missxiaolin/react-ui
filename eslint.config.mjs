@@ -15,7 +15,9 @@ export default tseslint.config({
         'no-console': 'error',
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
-        'no-unused-vars': 'off'
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
+        'no-useless-escape': 'off'
     },
     languageOptions: {
         parser: tseslint.parser,
