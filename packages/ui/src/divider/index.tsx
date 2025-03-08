@@ -4,7 +4,6 @@ import { useComponentConfig } from '../config-provider/context'
 import * as SC from './style'
 
 export interface DividerProps {
-    prefixCls?: string
     type?: 'horizontal' | 'vertical'
     /**
      * @default center
@@ -22,7 +21,6 @@ const Divider: React.FC<DividerProps> = props => {
     const { getPrefixCls, className: dividerClassName, style: dividerStyle } = useComponentConfig('divider')
 
     const {
-        prefixCls: customizePrefixCls,
         type = 'horizontal',
         orientation = 'center',
         className,
@@ -34,7 +32,7 @@ const Divider: React.FC<DividerProps> = props => {
         ...restProps
     } = props
 
-    const prefixCls = getPrefixCls('divider', customizePrefixCls)
+    const prefixCls = getPrefixCls('divider', '')
 
     const classString = classNames(
         prefixCls,
@@ -51,7 +49,14 @@ const Divider: React.FC<DividerProps> = props => {
     const spanClassName = classNames(`${prefixCls}-inner-text`, `${prefixCls}-inner-text-${orientation}`)
 
     return (
-        <SC.DividerStyle className={classString} style={{ ...dividerStyle, ...style }} {...restProps} {...props} role="separator">
+        <SC.DividerStyle
+            className={classString}
+            style={{ ...dividerStyle, ...style }}
+            {...restProps}
+            prefix={prefixCls}
+            color="red"
+            role="separator"
+        >
             {children && type !== 'vertical' && <span className={spanClassName}>{children}</span>}
         </SC.DividerStyle>
     )

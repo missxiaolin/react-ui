@@ -5,14 +5,14 @@ import { getPrefix } from '../../_utils/index'
 export const DividerStyle = styled.div`
     ${resetComponent()};
     position: relative;
-    &.${props => `${getPrefix('divider', props)}-horizontal`} {
+    &.${props => `${getPrefix('divider')}-horizontal`} {
         display: block;
         height: 1px;
         width: 100%;
         margin: 24px 0;
         border-top: 1px #ccc solid;
     }
-    &.${props => `${getPrefix('divider', props)}-vertical`} {
+    &.${props => `${getPrefix('divider')}-vertical`} {
         display: inline-block;
         width: 1px;
         height: 1em;
@@ -22,10 +22,10 @@ export const DividerStyle = styled.div`
         border-left: 1px #ccc solid;
     }
 
-    &.${props => `${getPrefix('divider', props)}-dashed`} {
+    &.${props => `${getPrefix('divider')}-dashed`} {
         border-style: dashed;
     }
-    & .${props => `${getPrefix('divider', props)}-inner-text`} {
+    & .${props => `${getPrefix('divider')}-inner-text`} {
         position: absolute;
         background-color: #fff;
         padding: 0 20px;
@@ -33,15 +33,15 @@ export const DividerStyle = styled.div`
         color: red;
         font-size: 14px;
     }
-    & .${props => `${getPrefix('divider', props)}-inner-text-center`} {
+    & .${props => `${getPrefix('divider')}-inner-text-center`} {
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
-    .${props => `${getPrefix('divider', props)}-inner-text-left`} {
+    .${props => `${getPrefix('divider')}-inner-text-left`} {
         left: 20px;
         transform: translateY(-50%);
     }
-    .${props => `${getPrefix('divider', props)}-inner-text-right`} {
+    .${props => `${getPrefix('divider')}-inner-text-right`} {
         right: 20px;
         transform: translateY(-50%);
     }

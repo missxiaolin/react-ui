@@ -6,9 +6,9 @@ const AppDivider: React.FC = () => (
         <p>Lorem</p>
         <Divider />
         <p>Lorem</p>
-        <Divider dashed />
+        <Divider dashed={true} />
         <p>Lorem</p>
-        <Divider dashed>sss</Divider>
+        <Divider dashed={true}>sss</Divider>
     </div>
 )
 

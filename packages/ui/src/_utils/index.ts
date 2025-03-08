@@ -49,8 +49,8 @@ export function unit(num: string | number) {
     return num
 }
 
-export const getPrefix = (name: string, props: any) => {
-    const { prefixCls: customizePrefixCls } = props
+export const getPrefix = (name: string) => {
+    const customizePrefixCls = ''
     const { getPrefixCls } = useComponentConfig('divider')
     const prefixCls = getPrefixCls(name, customizePrefixCls)
 
