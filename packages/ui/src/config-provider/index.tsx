@@ -12,11 +12,15 @@ export interface ConfigProviderProps {
      * The children to render.
      */
     children?: React.ReactNode
+    /**
+     * The direction of the layout.
+     */
+    tokens?: any
 }
 
-export const ConfigProvider: React.FC<ConfigProviderProps> = ({ theme, children }) => {
+export const ConfigProvider: React.FC<ConfigProviderProps> = ({ theme, children, tokens }) => {
     return (
-        <ConfigContext.Provider value={{}}>
+        <ConfigContext.Provider value={tokens}>
             <ConfigThemeProvider theme={theme}>{children}</ConfigThemeProvider>
         </ConfigContext.Provider>
     )

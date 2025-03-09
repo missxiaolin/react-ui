@@ -19,12 +19,12 @@ export interface ConfigConsumerProps extends ConfigComponentProps {
     getTargetContainer?: () => HTMLElement
     getPopupContainer?: (triggerNode?: HTMLElement) => HTMLElement
     rootPrefixCls?: string
-    iconPrefixCls: string
-    getPrefixCls: (suffixCls?: string, customizePrefixCls?: string) => string
+    iconPrefixCls?: string
+    getPrefixCls?: (suffixCls?: string, customizePrefixCls?: string) => string
     direction?: DirectionType
 }
 
-const defaultGetPrefixCls = (suffixCls?: string, customizePrefixCls?: string) => {
+export const defaultGetPrefixCls = (suffixCls?: string, customizePrefixCls?: string) => {
     if (customizePrefixCls) {
         return customizePrefixCls
     }
@@ -48,7 +48,7 @@ export const ConfigContext = createContext<ConfigConsumerProps>({
  */
 export function useComponentConfig<T extends keyof ConfigComponentProps>(propName: T) {
     const context = React.useContext(ConfigContext)
-    const { getPrefixCls, direction, getPopupContainer } = context
+    const { getPrefixCls = defaultGetPrefixCls, direction, getPopupContainer } = context
     const propValue = context[propName]
 
     return {
