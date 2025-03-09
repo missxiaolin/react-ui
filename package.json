@@ -12,7 +12,7 @@
         "build": "turbo run build",
         "release": "turbo run release",
         "lint:es": "eslint \"{packages,apps}/**/*.{js,jsx,ts,tsx}\"",
-        "lint:style": "stylelint \"{packages,apps}/**/*.{css,ts}\"",
+        "lint:style": "stylelint \"{packages,apps}/**/*.{scss,ts}\"",
         "lint": "npm run lint:es && npm run lint:style",
         "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
         "typecheck": "tsc --noEmit",

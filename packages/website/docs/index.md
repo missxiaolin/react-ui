@@ -16,3 +16,5 @@ hero:
 #       emoji: 🚀
 #       description: Put ! description here
 ---
+
+<code src="./index.tsx" inline></code>

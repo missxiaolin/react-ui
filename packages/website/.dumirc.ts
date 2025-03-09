@@ -17,6 +17,7 @@ export default defineConfig({
         entryFile: path.join(__dirname, '../ui/index.ts')
     },
     // locales: [{ id: 'zh-CN', name: '中文' }], // 配置主题
+    styles: [`/root.css`],
     themeConfig: {
         title: 'L-UI',
         favicon: '/l.svg',
@@ -31,7 +32,7 @@ export default defineConfig({
         nav: [
             {
                 title: '组件',
-                link: '/components/button'
+                link: '/components/icon'
             }
         ],
         socialLinks: {
