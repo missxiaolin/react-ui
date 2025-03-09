@@ -21,6 +21,7 @@ export const defaultPresetColors: PresetColorType = {
 }
 
 const seedToken: SeedToken = {
+    ...defaultPresetColors,
     // Color
     colorPrimary: '#1677ff',
     colorSuccess: '#52c41a',
