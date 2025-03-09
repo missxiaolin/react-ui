@@ -10,6 +10,7 @@ export interface ComponentStyleConfig {
 }
 
 export interface ConfigComponentProps {
+    root?: ComponentStyleConfig
     divider?: ComponentStyleConfig
 }
 

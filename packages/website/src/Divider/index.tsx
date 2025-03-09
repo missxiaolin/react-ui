@@ -13,9 +13,7 @@ const AppDivider: React.FC = () => {
                 <p>Lorem</p>
                 <Divider />
                 <p>Lorem</p>
-                <Divider dashed={true} />
-                <p>Lorem</p>
-                <Divider dashed={true}>sss</Divider>
+                <Divider>sss</Divider>
             </ConfigProvider>
         </div>
     )

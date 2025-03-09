@@ -10,7 +10,7 @@ export const DividerStyle = styled.div`
         height: 1px;
         width: 100%;
         margin: 24px 0;
-        border-top: 1px #ccc solid;
+        border-top: 1px var(--l-border-color-base) var(--l-border-style-base);
     }
     &.${props => `${getPrefix('divider')}-vertical`} {
         display: inline-block;
@@ -19,7 +19,7 @@ export const DividerStyle = styled.div`
         margin: 0 8px;
         vertical-align: middle;
         position: relative;
-        border-left: 1px #ccc solid;
+        border-left: 1px var(--l-border-color-base) var(--l-border-style-base);
     }
 
     &.${props => `${getPrefix('divider')}-dashed`} {
@@ -27,10 +27,10 @@ export const DividerStyle = styled.div`
     }
     & .${props => `${getPrefix('divider')}-inner-text`} {
         position: absolute;
-        background-color: #fff;
+        background-color: var(--l-color-white);
         padding: 0 20px;
         font-weight: 500;
-        color: red;
+        color: var(--l-text-color-primary);
         font-size: 14px;
     }
     & .${props => `${getPrefix('divider')}-inner-text-center`} {

@@ -2,9 +2,11 @@ import React, { useMemo } from 'react'
 
 import { ConfigThemeOverrides } from '../_types/theme.types'
 
-import { DEFAULT_THEME } from './default-theme'
+import { defaultConfig } from './context'
 import { ConfigThemeContext } from './context'
 import { useSafeTheme } from './useTheme'
+
+import { setStyleRoot } from './style'
 
 export interface ThemeProviderProps {
     /** Determines whether theme should be inherited from parent Provider, `true` by default */
@@ -19,7 +21,8 @@ export interface ThemeProviderProps {
 
 export function ConfigThemeProvider({ theme, children, inherit = true }: ThemeProviderProps) {
     const parentTheme = useSafeTheme()
-    const mergedTheme = useMemo(() => Object.assign(inherit ? parentTheme : DEFAULT_THEME, theme), [theme, parentTheme, inherit])
+    const mergedTheme = useMemo(() => Object.assign(inherit ? parentTheme : defaultConfig, theme), [theme, parentTheme, inherit])
+    setStyleRoot(mergedTheme)
 
     return <ConfigThemeContext.Provider value={mergedTheme}>{children}</ConfigThemeContext.Provider>
 }

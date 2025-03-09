@@ -1,9 +1,8 @@
 import { useContext } from 'react'
 
-import { DEFAULT_THEME } from './default-theme'
-import { ConfigThemeContext } from './context'
+import { ConfigThemeContext, defaultConfig } from './context'
 
-export const useSafeTheme = () => useContext(ConfigThemeContext) || DEFAULT_THEME
+export const useSafeTheme = () => useContext(ConfigThemeContext) || defaultConfig
 
 export const useTheme = () => {
     const ctx = useContext(ConfigThemeContext)

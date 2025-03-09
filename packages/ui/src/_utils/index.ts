@@ -56,3 +56,7 @@ export const getPrefix = (name: string) => {
 
     return prefixCls
 }
+
+export const transformString = (str: string) => {
+    return str.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`)
+}
