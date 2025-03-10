@@ -7,7 +7,7 @@ const AppDivider: React.FC = () => {
             <p>Lorem</p>
             <Divider />
             <p>Lorem</p>
-            <Divider>sss</Divider>
+            <Divider>中间</Divider>
         </>
     )
 }

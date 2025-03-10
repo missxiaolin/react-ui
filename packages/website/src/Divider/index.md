@@ -17,7 +17,7 @@ group:
 
 ## Divider 属性
 
-| 属性        | 说明                 | 类型   | 可选值                | 默认值     |
-| ----------- | -------------------- | ------ | --------------------- | ---------- |
-| type        | 设置分割线方向       | string | horizontal / vertical | horizontal |
-| orientation | 设置分割线文案的位置 | String | left / right / center | center     |
+| 属性        | 说明                 | 类型   | 可选值                  | 默认值     |
+| ----------- | -------------------- | ------ | ----------------------- | ---------- |
+| type        | 设置分割线方向       | string | horizontal \| vertical  | horizontal |
+| orientation | 设置分割线文案的位置 | String | left \| right \| center | center     |

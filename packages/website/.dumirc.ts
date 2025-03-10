@@ -25,10 +25,10 @@ export default defineConfig({
         name: 'L-UI',
         footer: false,
         hideHomeNav: true,
-        prefersColor: {
-            default: 'light',
-            switch: true
-        },
+        // prefersColor: {
+        //     default: 'light',
+        //     switch: true
+        // },
         nav: [
             {
                 title: '组件',
