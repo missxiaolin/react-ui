@@ -13,7 +13,7 @@ group:
 
 ## 代码演示
 
-<code src="./index.tsx"></code>
+<code src="./IconIndex.tsx"></code>
 
 `Icon` 中的 `component` 组件的接受的属性如下：
 

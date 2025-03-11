@@ -1,3 +1,11 @@
+.dumi-default-header-content {
+    max-width: 95% !important;
+}
+
+.dumi-default-doc-layout > main {
+    max-width: 95% !important;
+}
+
 :root {
     --l-blue: #1677ff;
     --l-purple: #722ed1;
