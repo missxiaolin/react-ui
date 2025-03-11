@@ -16,6 +16,8 @@ export interface ConfigComponentProps {
     root?: ComponentStyleConfig
     divider?: ComponentStyleConfig
     space?: SpaceConfig
+    row?: ComponentStyleConfig
+    col?: ComponentStyleConfig
 }
 
 export type DirectionType = 'ltr' | 'rtl' | undefined

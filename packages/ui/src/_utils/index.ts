@@ -60,3 +60,13 @@ export const getPrefix = (name: string) => {
 export const transformString = (str: string) => {
     return str.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`)
 }
+
+export const isNumber = (val: unknown): val is number => typeof val === 'number'
+
+export function isUndefined(val: any): val is undefined {
+    return val === undefined
+}
+
+export function isString(value: any): value is string {
+    return typeof value === 'string'
+}
