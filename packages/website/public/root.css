@@ -184,4 +184,11 @@
     --l-gary-light-3: #fafbfc;
     --l-gary-light-4: #fcfcfd;
     --l-gary-light-5: #fdfefe;
+    --l-padding-xs: 8px;
+    --l-padding-xsx: 4px;
+    --l-padding-sm: 12px;
+    --l-padding: 16px;
+    --l-padding-md: 20px;
+    --l-padding-lg: 24px;
+    --l-padding-Xl: 32px;
 }

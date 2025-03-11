@@ -1,6 +1,5 @@
 import React from 'react'
 import classNames from 'classnames'
-import omit from 'rc-util/lib/omit'
 import { FlexProps } from './interface'
 import { defaultGetPrefixCls } from '../config-provider/context'
 import { createFlexClassNames, isPresetSize } from './utils'

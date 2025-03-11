@@ -1,8 +1,11 @@
 import React, { createContext } from 'react'
+import { SpaceProps } from '../space'
 
 export const defaultPrefixCls = 'l'
 export const defaultIconPrefixCls = 'l-icon'
 const EMPTY_OBJECT = {}
+
+export type SpaceConfig = ComponentStyleConfig & Pick<SpaceProps, 'size' | 'classNames' | 'styles'>
 
 export interface ComponentStyleConfig {
     className?: string
@@ -12,6 +15,7 @@ export interface ComponentStyleConfig {
 export interface ConfigComponentProps {
     root?: ComponentStyleConfig
     divider?: ComponentStyleConfig
+    space?: SpaceConfig
 }
 
 export type DirectionType = 'ltr' | 'rtl' | undefined

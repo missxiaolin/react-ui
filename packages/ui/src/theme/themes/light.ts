@@ -2,6 +2,13 @@ import { getColor } from '../utils'
 
 export default function derivative() {
     return {
+        paddingXxs: '4px',
+        paddingXs: '8px',
+        paddingSm: '12px',
+        padding: '16px',
+        paddingMd: '20px',
+        paddingLg: '24px',
+        paddingXl: '32px',
         colorWhite: '#fff',
         colorBlack: '#1c2128',
         colorFinish: '#409eff',
