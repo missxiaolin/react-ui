@@ -10,6 +10,7 @@ export interface SeedToken extends PresetColorType {
     colorTextBase: string
     colorBgBase: string
     colorLink: string
+    linkFontWeight: number
     //  ----------   Font   ---------- //
     fontFamily: string
     fontFamilyCode: string

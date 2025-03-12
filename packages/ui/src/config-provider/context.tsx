@@ -23,6 +23,7 @@ export interface ConfigComponentProps {
     footer?: ComponentStyleConfig
     main?: ComponentStyleConfig
     aside?: ComponentStyleConfig
+    link?: ComponentStyleConfig
 }
 
 export type DirectionType = 'ltr' | 'rtl' | undefined

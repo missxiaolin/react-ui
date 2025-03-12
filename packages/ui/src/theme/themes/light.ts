@@ -115,11 +115,11 @@ export default function derivative() {
             '#d4f3f3',
             '#eaf9f9'
         ]),
-        ...getColor('success', ['#21b455', '#64cb88', '#90daaa', '#bce9cc', '#d3f0dd', '#e9f8ee']),
-        ...getColor('warning', ['#ff9c00', '#ffba4d', '#ffce80', '#ffe1b3', '#ffebcc', '#fff5e6']),
-        ...getColor('danger', ['#f56c6c', '#f89898', '#fab6b6', '#fcd3d3', '#fde2e2', '#fef0f0']),
-        ...getColor('error', ['#f56c6c', '#f89898', '#fab6b6', '#fcd3d3', '#fde2e2', '#fef0f0']),
-        ...getColor('info', ['#b3b5bb', '#cacbcf', '#d9dadd', '#e8e9eb', '#f0f0f1', '#f7f8f8']),
-        ...getColor('gary', ['#eef0f4', '#f3f5f7', '#f7f8fa', '#fafbfc', '#fcfcfd', '#fdfefe'])
+        ...getColor('colorSuccess', ['#21b455', '#64cb88', '#90daaa', '#bce9cc', '#d3f0dd', '#e9f8ee']),
+        ...getColor('colorWarning', ['#ff9c00', '#ffba4d', '#ffce80', '#ffe1b3', '#ffebcc', '#fff5e6']),
+        ...getColor('colorDanger', ['#f56c6c', '#f89898', '#fab6b6', '#fcd3d3', '#fde2e2', '#fef0f0']),
+        ...getColor('colorError', ['#f56c6c', '#f89898', '#fab6b6', '#fcd3d3', '#fde2e2', '#fef0f0']),
+        ...getColor('colorInfo', ['#b3b5bb', '#cacbcf', '#d9dadd', '#e8e9eb', '#f0f0f1', '#f7f8f8']),
+        ...getColor('colorGary', ['#eef0f4', '#f3f5f7', '#f7f8fa', '#fafbfc', '#fcfcfd', '#fdfefe'])
     }
 }
