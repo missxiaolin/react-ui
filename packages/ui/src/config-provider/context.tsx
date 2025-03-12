@@ -18,6 +18,11 @@ export interface ConfigComponentProps {
     space?: SpaceConfig
     row?: ComponentStyleConfig
     col?: ComponentStyleConfig
+    container?: ComponentStyleConfig
+    header?: ComponentStyleConfig
+    footer?: ComponentStyleConfig
+    main?: ComponentStyleConfig
+    aside?: ComponentStyleConfig
 }
 
 export type DirectionType = 'ltr' | 'rtl' | undefined

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_l_website=self.webpackChunk_l_website||[]).push([[12],{26013:function(s,_,t){t.r(_);var a=t(44194),c=t(17256),n=t(31549),e=(0,c.createFromIconFontCN)({scriptUrl:"//at.alicdn.com/t/c/font_4054851_le4r49cthb.js"}),o=function(){return(0,n.jsx)(e,{type:"l-suoxiao2"})};_.default=o}}]);
