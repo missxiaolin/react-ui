@@ -3,8 +3,9 @@ import classNames from 'classnames'
 import { useComponentConfig } from '../config-provider/context'
 import * as SC from './style'
 import { RowContextType, RowContextProvider } from './context'
+import { componentsPops } from '../_types'
 
-export interface RowProps {
+export interface RowProps extends componentsPops {
     gutter?: string | number
     cols?: string | number
     grid?: boolean
@@ -16,15 +17,19 @@ export interface RowProps {
 const Row: React.FC<RowProps> = props => {
     const { getPrefixCls } = useComponentConfig('row')
 
-    const { gutter = '', grid = false, vertical = false, cols, children, style } = props
+    const { gutter = '', grid = false, vertical = false, cols, children, style, className } = props
 
     const rowContext = React.useMemo<RowContextType>(() => ({ gutter, grid, vertical, cols }), [gutter, grid, vertical, cols])
 
     const prefixCls = getPrefixCls('row')
 
-    const cls = classNames(prefixCls, {
-        'is-flex-column': vertical
-    })
+    const cls = classNames(
+        prefixCls,
+        {
+            'is-flex-column': vertical
+        },
+        className
+    )
 
     return (
         <SC.RowStyle className={cls} style={style}>

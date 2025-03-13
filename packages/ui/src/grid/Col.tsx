@@ -4,26 +4,30 @@ import { useComponentConfig } from '../config-provider/context'
 import * as SC from './style'
 import { RowContext } from './context'
 import { isNumber, isString } from '../_utils'
-import { objTy } from '../_types'
+import { componentsPops, objTy } from '../_types'
 
-export interface ColProps {
+export interface ColProps extends componentsPops {
     flex?: string | number
     children?: React.ReactNode
     style?: React.CSSProperties
 }
 
 const Col: React.FC<ColProps> = props => {
-    const { flex = '', children, style } = props
+    const { flex = '', children, style, className } = props
     const { getPrefixCls } = useComponentConfig('col')
     const parentAttrs = React.useContext(RowContext)
 
     const prefixCls = getPrefixCls('col')
 
     const attrsCol = parentAttrs.cols || 0 // 获取父组件的cols
-    const cls = classNames(prefixCls, {
-        'flex-1': !attrsCol,
-        [`${prefixCls}-width-${attrsCol}`]: attrsCol
-    })
+    const cls = classNames(
+        prefixCls,
+        {
+            'flex-1': !attrsCol,
+            [`${prefixCls}-width-${attrsCol}`]: attrsCol
+        },
+        className
+    )
 
     // 获取 row 一行几列属性
     const colsVal: any = parentAttrs.cols && Number(parentAttrs.cols)

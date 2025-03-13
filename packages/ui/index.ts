@@ -1,5 +1,3 @@
-// export { default as Button } from './src/button'
-
 export { default as createFromIconFontCN } from './src/icon/IconFont'
 export { default as Divider } from './src/divider'
 export { ConfigProvider } from './src/config-provider'
@@ -16,3 +14,4 @@ export { default as Footer } from './src/layout/Footer'
 export { default as Header } from './src/layout/Header'
 export { default as Main } from './src/layout/Main'
 export { default as Link } from './src/link'
+export { default as Ellipsis } from './src/ellipsis'
