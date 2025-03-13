@@ -13,7 +13,7 @@ export interface ComponentStyleConfig {
 }
 
 export interface ConfigComponentProps {
-    public: ComponentStyleConfig
+    public?: ComponentStyleConfig
     root?: ComponentStyleConfig
     divider?: ComponentStyleConfig
     space?: SpaceConfig
