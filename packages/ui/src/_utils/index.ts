@@ -6,8 +6,8 @@ import { updateCSS } from 'rc-util/lib/Dom/dynamicCSS'
 import { iconStyles } from './styleConfig'
 import { useComponentConfig } from '../config-provider/context'
 
-export function warning(valid: boolean, message: string) {
-    warn(valid, `[@l-icons] ${message}`)
+export function warning(valid: boolean, message: string, name?: string) {
+    warn(valid, `[${name ? '' : '@l-icons'}] ${message}`)
 }
 
 export const svgBaseProps = {

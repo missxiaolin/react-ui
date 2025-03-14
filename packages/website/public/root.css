@@ -26,7 +26,7 @@
     --l-color-error: #ff4d4f;
     --l-color-info: #1677ff;
     --l-color-link: #5d626d;
-    --l-color-text-base: 14px;
+    --l-color-text-base: 'rgba(0,0,0,0.88)';
     --l-link-font-weight: 500;
     --l-color-bg-base: ;
     --l-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,

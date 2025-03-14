@@ -47,12 +47,8 @@ export const LinkStyle = styled.a`
         margin-right: 0px;
         order: 2;
     }
-    &.${props => `${getPrefix('divider')}-vertical`} {
+    &.${() => `${getPrefix('divider')}-vertical`} {
     }
-    &.${() => `${getPrefix('link')}--primary`} {
-        --l-link-text-color: #ccc;
-    }
-
     ${types.map(type => {
         return `
         &.${`link--${type}`} {

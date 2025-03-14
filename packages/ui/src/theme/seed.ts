@@ -30,7 +30,7 @@ const seedToken: SeedToken = {
     colorInfo: '#1677ff',
     colorLink: '#5d626d',
     linkFontWeight: 500,
-    colorTextBase: '14px',
+    colorTextBase: 'rgba(0,0,0,0.88)',
 
     colorBgBase: '',
 
