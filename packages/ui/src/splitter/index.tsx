@@ -27,7 +27,7 @@ const SplitterComp: React.FC<React.PropsWithChildren<SplitterProps>> = props => 
     const { getPrefixCls } = useComponentConfig('public')
     const { className, style, layout = 'horizontal', children, rootClassName, onResizeStart, onResize, onResizeEnd, lazy } = props
 
-    const isRTL = true
+    const isRTL = false
 
     const prefixCls = getPrefixCls('splitter')
 
