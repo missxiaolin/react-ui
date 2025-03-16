@@ -17,6 +17,7 @@ export const SplitterStyle = styled.div`
     --l-splitter-split-bar-draggable-size: 20px;
     --l-splitter-resize-spinner-size: 20px;
     --l-control-item-bg-hover: rgba(0, 0, 0, 0.04);
+    --l-control-item-bg-active-hover: #bae0ff;
     ${resetComponent()}
     list-style: none;
     display: flex;
@@ -32,12 +33,18 @@ export const SplitterStyle = styled.div`
             position: relative;
             user-select: none;
             box-sizing: border-box;
+            & .${() => `${getPrefix('splitter')}-bar-dragger-active`} {
+                &::before {
+                    background-color: var(--l-control-item-bg-active-hover) !important;
+                }
+            }
             & .${() => `${getPrefix('splitter')}-bar-dragger`} {
                 ${centerStyle()}
                 cursor: col-resize;
                 height: 100%;
                 width: 6px;
                 z-index: 1;
+
                 &::before {
                     width: 2px;
                     height: 100%;
@@ -71,6 +78,11 @@ export const SplitterStyle = styled.div`
     }
     &.${() => `${getPrefix('splitter')}-vertical`} {
         flex-direction: column;
+        & .${() => `${getPrefix('splitter')}-bar-dragger-active`} {
+            &::before {
+                background-color: var(--l-control-item-bg-active-hover) !important;
+            }
+        }
         & .${() => `${getPrefix('splitter')}-bar`} {
             cursor: row-resize;
             width: 100%;
