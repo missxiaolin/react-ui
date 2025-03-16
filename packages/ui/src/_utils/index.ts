@@ -6,6 +6,8 @@ import { updateCSS } from 'rc-util/lib/Dom/dynamicCSS'
 import { iconStyles } from './styleConfig'
 import { useComponentConfig } from '../config-provider/context'
 
+export const iconBaseUrl = '//at.alicdn.com/t/c/font_4054851_le4r49cthb.js'
+
 export function warning(valid: boolean, message: string, name?: string) {
     warn(valid, `[${name ? '' : '@l-icons'}] ${message}`)
 }

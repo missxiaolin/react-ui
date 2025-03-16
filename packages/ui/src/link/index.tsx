@@ -4,8 +4,7 @@ import { useComponentConfig } from '../config-provider/context'
 import { default as createFromIconFontCN } from '../icon/IconFont'
 import * as SC from './style'
 import { componentsPops } from '../_types'
-
-const iconBaseUrl = '//at.alicdn.com/t/c/font_4054851_le4r49cthb.js'
+import { iconBaseUrl } from '../_utils'
 
 export interface LinkProps extends componentsPops {
     type?: string
