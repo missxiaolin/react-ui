@@ -41,3 +41,5 @@ export type GetProps<T extends React.ComponentType<any> | object> =
  * @since 5.13.0
  */
 export type GetProp<T extends React.ComponentType<any> | object, PropName extends keyof GetProps<T>> = NonNullable<GetProps<T>[PropName]>
+
+export type Nullable<T> = T | null
