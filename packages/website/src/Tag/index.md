@@ -10,3 +10,7 @@ group:
 ### Tag 标签
 
 进行标记和分类的小标签。
+
+### 基础使用
+
+<code src="./index.tsx"></code>
